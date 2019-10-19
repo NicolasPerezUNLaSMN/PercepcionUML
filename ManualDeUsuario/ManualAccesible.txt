@@ -1,0 +1,72 @@
+2-	Modo online – Teclado
+
+
+a-	Inicio de pagina web. 
+
+Iniciar la actividad en Percepción UML es muy simple, tan solo hay que ingresar a la pagina oficial: 
+
+Link: http://node24730-uml-dc.jelastic.saveincloud.net/UML-DC/
+
+Cabe destacar que el servidor puede ir migrando por lo cual el link puede llegar a cambiar, para evitar que los usuarios no estén al tanto de estos cambios, todos tienen acceso a las redes sociales, foros de preguntas y soporte online en las siguientes plataformas de interacción social: 
+
+Facebook: https://www.facebook.com/groups/546266565848437
+
+Google: https://plus.google.com/102793582451064465757
+
+Instagram: https://www.instagram.com/percepcionuml/
+
+En dichas redes sociales se publicarán soluciones a problemas, ejemplos y en caso de ser necesario los nuevos links para acceder a la aplicación. 
+
+b-	Dibujar por medio del protocolo
+
+En la pantalla inicial de Percepcion UML, ir a la 3er opción, por medio de ALT + 3.
+
+
+c-	Escribir protocolo
+
+En siguiente pantalla nos permite escribir un protocolo para dibujar un DC. Apretando TAB una vez ya podemos escribir en la pantalla. 
+
+d-	Estructura del protocolo
+
+El protocolo ser escrito así: 
+
+											 
+Titulo este es el tirulo del DC
+Clase NombreClase1{
+-tipo1 atributo1
++tipo2 atributo2
+#tipo3 atributo3
+tipo4 atributo4
+-metodo1(tipo1 argumento1, tipo2 argumento2): retorno1
++metodo2(tipo3 argumento3, tipo4 argumento2): retorno2
+}
+Clase NombreClase2{
+-tipo nombre
++método(): retorno
+}
+NombreClase1 ComposicionDesde NombreClase2
+NombreClase1 ComposicionHacia NombreClase2
+NombreClase1 AgregacionDesde NombreClase2
+NombreClase1 AgregacionHacia NombreClase2
+NombreClase1 UnoAMuchos ComposicionDesde CeroAMuchos  NombreClase2
+NombreClase1 CeroAUno ComposicionHacia NombreClase2
+NombreClase1 HeredaDe NombreClase2
+NombreClase1 HeredaA NombreClase2
+
+
+Todas las combinaciones de comandos y ejemplos pueden descargarse de: 
+
+Link: https://1drv.ms/f/s!AgB0dw0E7wKakLFSIKSP6eW_2eNnAQ
+
+
+e-	Envio de nuestro protocolo
+
+Una vez escrito el protocolo, apretar TAB y enter para pasar al menú siguiente. 
+
+Podemos seguir modificando el texto de quererlo asi, o ir enviando cada cambio. Para enviarlos presionar TAB una vez para GENERAR LA IMAGEN, luego enter y TAB para llegar a la opción enviar por mail, presionar ENTER y nos llevara al formulario de envió por mail. 
+
+Completar los datos del destinatario, esto enviara por mail una imagen que ilustrara nuestro protocolo. 
+
+
+
+

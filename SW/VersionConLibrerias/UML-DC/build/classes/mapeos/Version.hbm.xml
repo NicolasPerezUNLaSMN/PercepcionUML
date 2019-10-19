@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+
+	<class name="datos.Version" table="Version">                   
+		<id column="idVersion" name="idVersion">
+		<generator class="identity"/>		
+		</id>
+		
+		
+		<property column="ultimaActualizacion" name="ultimaActualizacion" type="calendar"/>
+		<property column="comentario" name="comentario" type="string"/>
+		<property column="quien" name="quien" type="string"/>
+		
+		<many-to-one name="diagramaDeClase" class="datos.DiagramaDeClase" column="idDiagramaDeClase" not-null="true"/>
+		
+		
+		<set name="listaClases" cascade="save-update, delete" table="clase" order-by="idClase asc" inverse="true" lazy="true" fetch="select">
+			<key column="idVersion" not-null="true" />
+			<one-to-many class="datos.Clase" />				
+		</set>
+		
+		
+		
+	</class>
+</hibernate-mapping>					

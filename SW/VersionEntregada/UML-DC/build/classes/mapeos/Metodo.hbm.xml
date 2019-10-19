@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+
+	<class name="datos.Metodo" table="Metodo">                   
+		<id column="idMetodo" name="idMetodo">
+		<generator class="identity"/>		
+		</id>
+		
+		
+		<property column="privilegio" name="privilegio" type="string"/>
+		<property column="retorno" name="retorno" type="string"/>
+		<property column="nombre" name="nombre" type="string"/>
+		
+		<many-to-one name="clase" class="datos.Clase" column="idClase" not-null="true"/>
+		
+		
+		<set name="listaArgumentos" cascade="save-update, delete" table="clase" order-by="idArgumento asc" inverse="true" lazy="true" fetch="select">
+			<key column="idMetodo" not-null="true" />
+			<one-to-many class="datos.Argumento" />				
+		</set>
+		
+		
+		
+	</class>
+</hibernate-mapping>					

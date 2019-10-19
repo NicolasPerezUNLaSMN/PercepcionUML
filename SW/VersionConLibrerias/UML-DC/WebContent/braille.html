@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+ 
+   <title>Braille Translator</title>
+   
+   
+   <meta name="google-site-verification" content="07NhKX_-v7YC0UYxXPW-ISk73-uiEKdjzqU2RaiPAuA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="application-name" content="Fun Translations" />
+    <meta name="author" content="orthosie" />
+    <meta name="robots" content="All" />
+    <meta name="description" content='Translate from English to Braille. Braille is a tactile writing system used by people who are blind or visually impaired. It is traditionally written with embossed paper. Braille-users can read computer screens and other electronic supports thanks to refreshable braille displays. They can write braille with the original slate and stylus or type it on a braille writer, such as a portable braille note-taker, or on a computer that prints with a braille embosser. This Braille Translator uses the Braille system to convert English phrases to Braille system and displays in a browser friendly way.'>
+    <meta name="keywords" content="" />
+    <meta name="generator" content="Orthosie META Tag Generator: http://toolswebtop.com/seo/metatag" />
+    <meta name="rating" content="General" />
+
+    <meta name="msvalidate.01" content="862295C6F21EB0467870986498893633" />
+
+    <meta name="dcterms.title" content="Braille Translator" />
+    <meta name="dcterms.contributor" content="orthosie" />
+    <meta name="dcterms.creator" content="orthosie" />
+    <meta name="dcterms.publisher" content="orthosie" />
+    <meta name="dcterms.description" content='Translate from English to Braille. Braille is a tactile writing system used by people who are blind or visually impaired. It is traditionally written with embossed paper. Braille-users can read computer screens and other electronic supports thanks to refreshable braille displays. They can write braille with the original slate and stylus or type it on a braille writer, such as a portable braille note-taker, or on a computer that prints with a braille embosser. This Braille Translator uses the Braille system to convert English phrases to Braille system and displays in a browser friendly way.' />
+    <meta name="dcterms.rights" content="Copyright 2014-16 Fun Translations" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Braille Translator" />
+    <meta property="og:image" content="http://funtranslations.com/img/braille.png" />
+    <meta property="og:image:width" content="350" />
+    <meta property="og:image:height" content="220" />
+    <meta property="og:site_name" content="Fun Translations" />    
+    <meta property="og:description" content='Translate from English to Braille. Braille is a tactile writing system used by people who are blind or visually impaired. It is traditionally written with embossed paper. Braille-users can read computer screens and other electronic supports thanks to refreshable braille displays. They can write braille with the original slate and stylus or type it on a braille writer, such as a portable braille note-taker, or on a computer that prints with a braille embosser. This Braille Translator uses the Braille system to convert English phrases to Braille system and displays in a browser friendly way.' />
+    <meta property="twitter:title" content="Braille Translator" />
+    <meta property="twitter:description" content='Translate from English to Braille. Braille is a tactile writing system used by people who are blind or visually impaired. It is traditionally written with embossed paper. Braille-users can read computer screens and other electronic supports thanks to refreshable braille displays. They can write braille with the original slate and stylus or type it on a braille writer, such as a portable braille note-taker, or on a computer that prints with a braille embosser. This Braille Translator uses the Braille system to convert English phrases to Braille system and displays in a browser friendly way.' />
+    <meta name="twitter:image:src" content="http://funtranslations.com/img/braille.png" />
+    <link type="image/x-icon" href="/branding/iteract.ico" rel="shortcut icon"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <!--link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"-->
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href='/css/funtranslations.css' rel='stylesheet' type='text/css'>
+
+
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+
+
+
+<style>
+  p {
+    text-align: justify;
+  }
+.result-footer a
+{
+   padding-right: 10px;
+}
+
+.callout
+{
+position: relative;
+width: 100%;
+padding: 10px;
+background: #FFFF6D;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+border: #7F7F7F solid 1px;
+}
+
+.callout:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 31px 73px;
+border-color: #FFFF6D transparent;
+display: block;
+width: 0;
+z-index: 1;
+margin-left: -31px;
+top: -73px;
+left: 20%;
+}
+
+.callout:before
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 31px 73px;
+border-color: #7F7F7F transparent;
+display: block;
+width: 0;
+z-index: 0;
+margin-left: -31px;
+top: -74px;
+left: 20%;
+}
+
+
+#ytext {
+   border: #d0d6dc solid 10px;
+       font-weight: lighter;
+    font-size: 24px
+}
+#btn-translate
+{
+   border-style: solid ;
+   border-width: 10px;
+   font-weight: lighter;
+   font-size: 24px
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
+#morse 
+{
+   font-size: 32px;
+   font-weight: 700;
+   font-style: bold;
+}
+
+#signlanguage,
+#tengwar,
+#morse,
+#aurebesh,
+#braille
+{
+   display: block;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   background-color: #fff;
+   padding: 30px;
+   line-height: 52px;
+   font-size: 46px;
+   color: #333;
+}
+
+#signlanguage,
+#braille
+{
+   overflow: scroll;
+}
+
+#signlanguage
+{
+   font-size: 92px;
+   line-height: 96px;
+}
+
+pre{overflow-x:auto;word-wrap:normal;white-space:pre;max-width:100%}
+
+@media screen and (max-width: 500px) {
+  .letter{
+    padding: 10px;
+    font-size: 16px;
+    text-align: justify;
+  }
+ 
+  .filter-image {
+     width: 98%;
+     margin: 0 auto;
+  } 
+  .right-ads {
+    margin-left: -10px;
+  }
+}
+
+.inline {
+   display: inline;
+}
+
+.googlebadge {
+   display: inline-block;
+   vertical-align: top;
+   margin-top: -10px;
+   padding-top: 0px;
+}
+
+</style>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4658013134207481",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+<body>
+
+<section id="header">
+  <div class="top-ad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Fun Translations Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4658013134207481"
+     data-ad-slot="1912572208"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+  
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+Titulo Prueba de Abril - Creada por: Nicolas y Hernan - 22/04/2018
+Clase Empleado InicioClase
+
+-int legajo
++String nombre
++String Para prueba
++String mas_nuevo_aun
+
+-calcularSueldo ( Int anioDeIngreso ) :Int
+ FinClase
+Clase Contratado InicioClase
+
+
+ FinClase
+Interface Tercerizado InicioClase
+
+-int idEmpleado
+
++terminarContrato ( ) :Void
+ FinClase
+enum Jefe InicioClase
+
+-int idJefe
+
+#calcularSueldoNeto ( ) :Int
+ FinClase
+
+Empleado CeroAUno ComposicionDesde UnoAMuchos Tercerizado
+
+Contratado CeroAMuchos Implementa CeroAMuchos Contratado
+Contratado HeredaDe Jefe
+
+Tercerizado CeroAUno ComposicionDesde CeroAMuchos Jefe
+
+Jefe CeroAUno Implementa UnoAMuchos Tercerizado
+Jefe UnoAMuchos ComposicionDesde UnoAMuchos Empleado

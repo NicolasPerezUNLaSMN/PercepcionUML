@@ -1,0 +1,120 @@
+Titulo Prueba con metodos abreviados - Creada por: NicoJunio viva Belgica - 18/06/2018
+Clase AeroPuerto InicioClase
+
+-int idAeropuerto
+-String nombre
+-String direccion
+#String telefono
+
++mostrarPrecios ( String fecha , Int puntos ) :String
+ FinClase
+Clase Avion InicioClase
+
+-int idAvion
++int cantidadDePasajeros
++float pesoMaximo
+
++repararComponente ( Componente componente ) :String
+ FinClase
+Clase Componente InicioClase
+
+-int idComponente
+-String nombre
+
++calcularPrecio ( ) :Int
+ FinClase
+Clase Precio InicioClase
+
+-int idPrecio
+-float descuento
+-int tipo
+
+ FinClase
+Clase Empleado InicioClase
+
+-int legajo
+-int anioDeIngreso
+
+ FinClase
+Clase Pasajero InicioClase
+
+-int numeroViajero
+-float precioPagado
+
++hacerCheckIn ( ) :Void
++subirAAvion ( Int numeroAvion ) :Void
+ FinClase
+Clase Persona InicioClase
+
+-int dni
+-String nombre
+-String apellido
++String celular
+
++pedirAumento ( Calendar fecha , ListaDePrecio precios ) :float
+ FinClase
+Interface PantallaPasajero InicioClase
+
+-String fechaActualizacion
+
++mostrarArrivos ( ) :String
++mostrarTiempoDeDespegue ( ) :String
+ FinClase
+ClaseAbstracta FuncionesPiloto InicioClase
+
+
++mostrarRuta ( ) :String
++mostrarTripulacion ( ) :String
+ FinClase
+Clase ClaseStress1 InicioClase
+
+
+ FinClase
+Interface ClaseStress2 InicioClase
+
+
+ FinClase
+enum ClaseStress3 InicioClase
+
+
+ FinClase
+Interface ClaseStress4 InicioClase
+
+
+ FinClase
+Clase ClaseStress5 InicioClase
+
+
+ FinClase
+
+AeroPuerto UnoAMuchos ComposicionDesde UnoAMuchos Avion
+AeroPuerto UnoAMuchos AgregacionDesde UnoAMuchos Persona
+
+Avion UnoAMuchos ComposicionDesde UnoAMuchos Componente
+
+Componente UnoAMuchos Implementa CeroAUno Precio
+
+
+Empleado HeredaA ClaseStress5
+
+Pasajero Implementa PantallaPasajero
+
+Persona HeredaDe Empleado
+Persona HeredaDe Pasajero
+
+PantallaPasajero CeroAUno ComposicionDesde UnoAMuchos ClaseStress1
+
+FuncionesPiloto Implementa Empleado
+
+ClaseStress1 HeredaA ClaseStress2
+ClaseStress1 CeroAUno ComposicionDesde UnoAMuchos Precio
+ClaseStress1 AgregacionDesde ClaseStress3
+
+
+ClaseStress3 CeroAUno ComposicionDesde UnoAMuchos Persona
+ClaseStress3 CeroAMuchos AgregacionDesde UnoAMuchos ClaseStress1
+ClaseStress3 HeredaA Empleado
+
+ClaseStress4 ComposicionDesde ClaseStress3
+
+ClaseStress5 AgregacionDesde AeroPuerto

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD
+3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		
+		 
+		<property name="connection.url">jdbc:mysql://node24731-uml-dc.jelastic.saveincloud.net:3306/umldc</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">AGKann39633</property>	
+		
+		
+		<!-- 
+		<property name="connection.url">jdbc:mysql://127.0.0.1:3306/umldc</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+		-->
+
+		<property name="connection.pool_size">1</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+	 
+		<property name="show_sql">false</property> <!-- en true muestra hql en consola-->
+		
+		
+		
+		<mapping resource="mapeos/DiagramaDeClase.hbm.xml"/>
+		<mapping resource="mapeos/Version.hbm.xml"/>
+		<mapping resource="mapeos/Clase.hbm.xml"/>
+		<mapping resource="mapeos/Atributo.hbm.xml"/>
+		<mapping resource="mapeos/Relacion.hbm.xml"/>
+		<mapping resource="mapeos/Metodo.hbm.xml"/>
+		<mapping resource="mapeos/Argumento.hbm.xml"/>
+		
+		<!--Mapeo Entidades 
+		<mapping resource="mapeos/Argumento.hbm.xml"/>
+		<mapping resource="mapeos/Atributo.hbm.xml"/>	
+		<mapping resource="mapeos/Clase.hbm.xml"/>
+		<mapping resource="mapeos/DiagramaDeClase.hbm.xml"/>
+		<mapping resource="mapeos/Metodo.hbm.xml"/>	
+		<mapping resource="mapeos/Relacion.hbm.xml"/>
+		<mapping resource="mapeos/Version.hbm.xml"/>
+		<mapping resource="mapeos/Argumento.hbm.xml"/>
+		<mapping resource="mapeos/Version.hbm.xml"/>
+		 -->
+		
+			
+	</session-factory>
+</hibernate-configuration>   			

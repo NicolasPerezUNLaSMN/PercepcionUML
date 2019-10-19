@@ -1,0 +1,16 @@
+Clase Persona InicioClase
+
+-float DNI
+-String apellido
+
+llamarPersona ( Persona pers ) :Persona
+ FinClase
+Clase Trabajo InicioClase
+
+#String nombreDelTrabajo
+
+ FinClase
+
+Persona CeroAUno ComposicionDesde CeroAUno Trabajo
+
+Trabajo Implementa Trabajo

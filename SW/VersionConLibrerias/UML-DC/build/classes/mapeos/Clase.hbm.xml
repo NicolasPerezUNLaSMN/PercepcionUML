@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+
+	<class name="datos.Clase" table="Clase">                   
+		<id column="idClase" name="idClase">
+		<generator class="identity"/>		
+		</id>
+		
+		
+		<property column="nombre" name="nombre" type="string"/>
+		<property column="tipo" name="tipo" type="string"/>
+		
+		
+		<many-to-one name="Version" class="datos.Version" column="idVersion" not-null="true"/>
+		
+		
+		<set name="listaAtributos" cascade="save-update, delete" table="atributo" order-by="idAtributo asc" inverse="true" lazy="true" fetch="select">
+			<key column="idClase" not-null="true" />
+			<one-to-many class="datos.Atributo" />				
+		</set>
+		
+		
+		<set name="listaMetodos" cascade="save-update, delete" table="metodo" order-by="idMetodo asc" inverse="true" lazy="true" fetch="select">
+			<key column="idClase" not-null="true" />
+			<one-to-many class="datos.Metodo" />				
+		</set>
+		
+		
+		<set name="listaRelaciones" cascade="save-update, delete" table="relacion" order-by="idrelacion asc" inverse="true" lazy="true" fetch="select">
+			<key column="idClase" not-null="true" />
+			<one-to-many class="datos.Relacion" />				
+		</set>
+		
+		
+		
+		
+	</class>
+</hibernate-mapping>					
